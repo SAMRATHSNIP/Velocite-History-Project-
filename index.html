@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>History Project</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 2em; background-color: #f9f9f9; }
-        header { text-align: center; margin-bottom: 2em; }
-        section { background: #fff; padding: 1.5em; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);}
-        h1 { color: #333; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Centered Background Car</title>
+  <style>
+    body {
+      font-family: "Georgia", serif;
+      margin: 0;
+      height: 100vh;
+      /* Background image centered and fixed */
+      background: url('https://i.ibb.co/MxcGc8BL/your-image.jpg') no-repeat center center fixed;
+      background-size: 120% auto; /* slightly bigger and keep aspect ratio */
+      
+      /* Flexbox to center content */
+      display: flex;
+      justify-content: center;  /* horizontal center */
+      align-items: center;      /* vertical center */
+      
+      color: #2e2712;
+      padding: 2em;
+      text-align: center; /* center text inside container */
+    }
+    
+    .content {
+      background: rgba(255, 255, 255, 0.75); /* semi-transparent background for readability */
+      padding: 1em 2em;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      max-width: 600px;
+      font-size: 1.2em;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>History Project</h1>
-        <p>Exploring Important Events in History</p>
-    </header>
-    <section>
-        <h2>Introduction</h2>
-        <p>
-            This project highlights significant events, people, and movements that shaped history.
-        </p>
-        <h2>Major Events</h2>
-        <ul>
-            <li>The Renaissance (14th–17th Century)</li>
-            <li>The Industrial Revolution (18th–19th Century)</li>
-            <li>World War I (1914–1918)</li>
-            <li>World War II (1939–1945)</li>
-            <li>Civil Rights Movement (1950s–1960s)</li>
-        </ul>
-        <h2>Conclusion</h2>
-        <p>
-            The study of history allows us to learn from the past and better understand the present.
-        </p>
-    </section>
+  <div class="content">
+    <h1>Welcome to the Velocite Project</h1>
+    <p>This text is centered horizontally and vertically over a centered background car image.</p>
+  </div>
 </body>
 </html>
