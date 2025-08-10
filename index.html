@@ -2,36 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>History Project</title>
+  <title>Velocite History Project</title>
   <style>
     body {
       font-family: "Georgia", serif;
       background: url('https://i.ibb.co/MxcGc8BL/your-image.jpg') no-repeat center center fixed;
-      background-size: 120% auto; /* adjust as needed */
+      background-size: cover; /* fills screen while keeping ratio */
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
       color: #2e2712;
-      padding: 2em;
+    }
+    marquee {
+      width: 100%;
+      font-weight: bold;
+      background: rgba(255, 255, 255, 0.6);
+      padding: 0.5em 0;
+      margin-bottom: 20px;
     }
     .content {
       background: rgba(255,255,255,0.75);
       padding: 1.5em 2em;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      max-width: 600px;
+      max-width: 800px;
     }
   </style>
 </head>
 <body>
+  <!-- Scrolling text at top -->
+  <marquee behavior="scroll" direction="left">
+    Welcome to the Velocite History Project — Exploring Important Events in History!
+  </marquee>
+
+  <!-- Main content -->
   <div class="content">
-    <h1>History Project</h1>
-    <p><b>Exploring Important Events in History</b></p>
-    <h2>Introduction</h2>
-    <p>This project highlights significant events, people, and movements that shaped history.</p>
-    <h2>Major Events</h2>
+    <h1>Velocite — A Vision by Samrath</h1>
+    <p>
+      Founded amidst the dawn of a new industrial age by the visionary Samrath, Velocite emerges as a beacon of ingenuity and craftsmanship. With an unyielding commitment to excellence, Velocite harnesses the latest advancements in steam and mechanical power to bring forth wondrous vehicles that promise to traverse roads yet untamed. Under Samrath’s inspired guidance, our esteemed artisans blend precision with passion, crafting machines that embody both utility and elegance. Velocite stands proud as a herald of progress, dedicated to shaping the future of travel with unwavering spirit and innovation. Join us as we journey forth into an era of boundless possibility and discovery.
+    </p>
+
+    <h2>Major Historical Inspirations</h2>
     <ul>
       <li>The Renaissance (14th–17th Century)</li>
       <li>The Industrial Revolution (18th–19th Century)</li>
@@ -39,8 +52,6 @@
       <li>World War II (1939–1945)</li>
       <li>Civil Rights Movement (1950s–1960s)</li>
     </ul>
-    <h2>Conclusion</h2>
-    <p>The study of history allows us to learn from the past and better understand the present.</p>
   </div>
 </body>
 </html>
